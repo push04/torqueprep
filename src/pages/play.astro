@@ -1,7 +1,15 @@
 ---
 import Base from "../layouts/Base.astro";
 import QuestionPlayer from "../components/QuestionPlayer.jsx";
+import StatsPanel from "../components/StatsPanel.jsx";
 ---
 <Base title="Practice — TorquePrep">
-  <QuestionPlayer client:load />
+  <section class="grid cols-2">
+    <div>
+      <QuestionPlayer client:load />
+    </div>
+    <div>
+      <StatsPanel client:load />
+    </div>
+  </section>
 </Base>

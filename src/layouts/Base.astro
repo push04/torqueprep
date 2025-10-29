@@ -1,4 +1,5 @@
 ---
+import "../styles/global.css";
 const { title = "TorquePrep • ME (Fluid Mechanics)", description = "Professional practice for ME — Fluid Mechanics" } = Astro.props;
 ---
 <html lang="en">
@@ -7,13 +8,19 @@ const { title = "TorquePrep • ME (Fluid Mechanics)", description = "Profession
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="stylesheet" href="/src/styles/global.css" />
+    
   </head>
   <body>
     <header>
       <div class="header">
         <div class="brand">TorquePrep • ME</div>
         <nav class="nav">
+          <div class="theme-row">
+            <span class="badge">Theme</span>
+            <span class="theme-dot" id="themeOcean" style="background:#5fb0ff"></span>
+            <span class="theme-dot" id="themeAurora" style="background:#9ad16e"></span>
+            <span class="theme-dot" id="themeGraphite" style="background:#9aa4b2"></span>
+          </div>
           <a href="/">Home</a>
           <a href="/play">Practice</a>
           <a href="/choose">Choose</a>
@@ -24,5 +31,18 @@ const { title = "TorquePrep • ME (Fluid Mechanics)", description = "Profession
     <main>
       <slot />
     </main>
+    <footer>TorquePrep • ME — Fluid Mechanics • © {new Date().getFullYear?.() || ''}</footer>
+    <script is:inline>
+      (function(){
+        const key='tp_theme';
+        const root=document.documentElement;
+        try{ const t=localStorage.getItem(key) || 'ocean'; root.setAttribute('data-theme', t); }catch{}
+        function set(t){ try{ localStorage.setItem(key,t); }catch{}; root.setAttribute('data-theme', t); }
+        document.getElementById('themeOcean')?.addEventListener('click', ()=> set('ocean'));
+        document.getElementById('themeAurora')?.addEventListener('click', ()=> set('aurora'));
+        document.getElementById('themeGraphite')?.addEventListener('click', ()=> set('graphite'));
+      })();
+    </script>
+
   </body>
 </html>
