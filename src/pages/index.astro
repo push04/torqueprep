@@ -1,0 +1,30 @@
+---
+import Base from "../layouts/Base.astro";
+---
+<Base title="TorquePrep • ME (Fluid Mechanics)">
+  <section class="hero grid cols-2">
+    <div class="card">
+      <h1 style="margin:0 0 8px 0;">Fluid Mechanics — GATE/IES (ME)</h1>
+      <p class="muted">Real questions sourced from your provided book. Practice fast with a clean, responsive UI.</p>
+      <div style="display:flex; gap:10px; margin-top:12px;">
+        <a class="btn" href="/play">Start Practice</a>
+        <a class="btn alt" href="/choose">Choose Questions</a>
+        <a class="btn alt" href="/import">Import PDF</a>
+      </div>
+      <div class="kpi" style="margin-top:12px;">
+        <div class="card"><div class="muted">Focus</div><div>Fluid Mechanics (ME)</div></div>
+        <div class="card"><div class="muted">Modes</div><div>All / Selected / Random 25</div></div>
+        <div class="card"><div class="muted">Types</div><div>MCQ / NAT</div></div>
+        <div class="card"><div class="muted">Progress</div><div>Tracked locally</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>How it works</h3>
+      <ol>
+        <li>Practice directly from the bundled dataset.</li>
+        <li>Use <strong>Choose</strong> to build your own set.</li>
+        <li>Optionally <strong>Import</strong> another PDF to extend.</li>
+      </ol>
+    </div>
+  </section>
+</Base>
