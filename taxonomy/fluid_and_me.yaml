@@ -1,0 +1,45 @@
+chapters:
+  - name: "Basics & Properties"
+    topics:
+      - name: "Fluid Properties"
+        include: ["specific gravity", "viscosity", "surface tension", "vapor pressure", "compressibility"]
+      - name: "Hydrostatics"
+        include: ["pressure.*head", "pascal", "manometer", "buoyancy", "metacenter"]
+  - name: "Flow Kinematics"
+    topics:
+      - name: "Continuity & Velocity Field"
+        include: ["continuity", "velocity field", "stream function", "potential function", "irrotational", "vorticity"]
+      - name: "Acceleration & Deformation"
+        include: ["material derivative", "acceleration", "strain rate", "deformation"]
+  - name: "Flow Dynamics"
+    topics:
+      - name: "Bernoulli & Energy"
+        include: ["bernoulli", "head loss", "energy equation", "venturi", "orifice", "pitot"]
+      - name: "Momentum & Forces"
+        include: ["momentum equation", "force on bend", "jet.*plate", "impulse-momentum"]
+  - name: "Dimensional Analysis & Similitude"
+    topics:
+      - name: "Buckingham Pi"
+        include: ["buckingham", "dimensionless", "reynolds number", "froude", "weber", "mach number"]
+  - name: "Boundary Layer & External Flows"
+    topics:
+      - name: "Boundary Layer"
+        include: ["blasius", "displacement thickness", "momentum thickness", "skin friction", "drag coefficient"]
+      - name: "Lift & Drag"
+        include: ["drag.*sphere|cylinder|plate", "lift coefficient", "separation"]
+  - name: "Internal Flows — Pipe"
+    topics:
+      - name: "Laminar/Turbulent & Friction"
+        include: ["darcy.*weisbach", "colebrook", "moody", "fanning", "laminar.*pipe", "turbulent.*pipe"]
+      - name: "Minor Losses & Networks"
+        include: ["loss coefficient", "series.*parallel.*pipes", "equivalent pipe", "hardy cross"]
+  - name: "Open-Channel Flow"
+    topics:
+      - name: "Uniform/Critical Flow"
+        include: ["manning", "chezy", "specific energy", "critical depth", "froude.*open channel"]
+      - name: "GVF & RVF"
+        include: ["gradually varied flow", "rapidly varied flow", "hydraulic jump", "specific force"]
+  - name: "Compressible Flow"
+    topics:
+      - name: "Isentropic & Nozzles"
+        include: ["isentropic", "stagnation", "area.*mach", "normal shock", "oblique shock", "fanno", "rayleigh"]

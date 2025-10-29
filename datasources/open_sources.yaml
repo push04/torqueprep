@@ -1,0 +1,32 @@
+# Publicly reachable pages that often host PYQs or official paper PDFs.
+# Review each site's terms before use. Remove any you don't have rights to use.
+sources:
+  - name: "NDLI GATE Mechanical (official PDFs & keys)"
+    url: "https://www.ndl.gov.in/cd_document/gate/gate/me"
+    type: "html-page"
+    find: ["pdf"]
+    notes: "National Digital Library index to official papers/keys; follow their usage terms."
+
+  - name: "GATE Overflow — ME index"
+    url: "https://me.gateoverflow.in/previous-years"
+    type: "html-page"
+    find: []       # usually links to Q/A pages rather than PDFs; download manually if allowed
+    notes: "Community resource; check licensing/permissions for bulk downloads."
+
+  - name: "ExamPrev — ME yearwise"
+    url: "https://examprev.com/mechanical-engineering-gate-yearwise-questions"
+    type: "html-page"
+    find: ["pdf"]
+    notes: "Check page terms; if blocked, download manually."
+
+  - name: "VedPrep — GATE PYQs ME"
+    url: "https://vedprep.com/exams/gate/gate-previous-year-question-papers/"
+    type: "html-page"
+    find: ["pdf"]
+    notes: "Table lists PDFs per year; usage may be restricted."
+
+  - name: "Ekxam — IES/ESE PYQs"
+    url: "https://gate2016.info/ies-previous-years-papers/"
+    type: "html-page"
+    find: ["pdf"]
+    notes: "Links to UPSC ESE papers; verify rights before downloading."
